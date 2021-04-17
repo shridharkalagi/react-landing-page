@@ -32,7 +32,19 @@ const Header = ({ t }) => {
     return (
       <Fragment>
         <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
-          <S.Span>{t("About")}</S.Span>
+          <S.Span>Home</S.Span>
+        </S.CustomNavLinkSmall>
+        <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
+          <S.Span>About Us</S.Span>
+        </S.CustomNavLinkSmall>
+        <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
+          <S.Span>Contact Us</S.Span>
+        </S.CustomNavLinkSmall>
+        <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
+          <S.Span>Help</S.Span>
+        </S.CustomNavLinkSmall>
+        <S.CustomNavLinkSmall onClick={() => scrollTo("about")}>
+          <S.Span>Donate</S.Span>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall onClick={() => scrollTo("mission")}>
           <S.Span>{t("Mission")}</S.Span>
@@ -45,7 +57,7 @@ const Header = ({ t }) => {
           onClick={() => scrollTo("contact")}
         >
           <S.Span>
-            <Button>{t("Contact")}</Button>
+            <Button>Login</Button>
           </S.Span>
         </S.CustomNavLinkSmall>
       </Fragment>
@@ -57,7 +69,7 @@ const Header = ({ t }) => {
       <S.Container>
         <Row type="flex" justify="space-between" gutter={20}>
           <S.LogoContainer to="/" aria-label="homepage">
-            <SvgIcon src="logo.svg" />
+            <SvgIcon src="srijspn.svg" />
           </S.LogoContainer>
           <S.NotHidden>
             <MenuItem />
